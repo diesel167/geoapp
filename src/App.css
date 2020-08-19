@@ -1,4 +1,44 @@
 .leaflet-container {
   height: 100vh;
   width: 100%;
+  z-index: 1;
+}
+
+.App{
+  position: relative;
+  z-index: 1;
+}
+.modal{
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: calc(50% - 300px);
+  z-index: 100;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.close{
+  width: 30px;
+  height: 30px;
+  float: right;
+  color: black;
+  display: block;
+  z-index: 110;
+}
+
+.close:hover{
+  transform: scale(1.1);
+  color: #78b4ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width:660px){
+  .modal{
+    left: calc(50% - 150px);
+    width: 300px;
+  }
+
 }
